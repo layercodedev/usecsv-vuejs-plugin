@@ -12,7 +12,7 @@ interface IUsecsv {
 }
 
 export default /*#__PURE__*/ Vue.extend<{hasSlot:boolean},{onclick:()=>void,hasScopedSlot:()=>boolean},any,IUsecsv>({
-  name: "use-csv", // vue component name
+  name: "usecsv-button", // vue component name
   data() {
     return {
       hasSlot: !!this.$slots.default,
@@ -40,7 +40,7 @@ export default /*#__PURE__*/ Vue.extend<{hasSlot:boolean},{onclick:()=>void,hasS
 <template>
   <div class="usecsv">
     <div v-if="hasScopedSlot()">
-      <slot :onclick="onclick"> open usecsv </slot>
+      <slot :onclick="onclick"/>
     </div>
     <div v-else>
       <button type="button" id="usecsv-button" @click="onclick">

@@ -86,7 +86,7 @@ if (!argv.format || argv.format === 'es') {
     input: 'src/entry.esm.ts',
     external,
     output: {
-      file: 'dist/usecsv.esm.js',
+      file: 'dist/UseCSVButton.esm.js',
       format: 'esm',
       exports: 'named',
     },
@@ -125,9 +125,9 @@ if (!argv.format || argv.format === 'cjs') {
     external,
     output: {
       compact: true,
-      file: 'dist/usecsv.ssr.js',
+      file: 'dist/UseCSVButton.ssr.js',
       format: 'cjs',
-      name: 'Usecsv',
+      name: 'UseCSVButton',
       exports: 'auto',
       globals,
     },
@@ -154,9 +154,9 @@ if (!argv.format || argv.format === 'iife') {
     external,
     output: {
       compact: true,
-      file: 'dist/usecsv.min.js',
+      file: 'dist/UseCSVButton.min.js',
       format: 'iife',
-      name: 'Usecsv',
+      name: 'UseCSVButton',
       exports: 'auto',
       globals,
     },

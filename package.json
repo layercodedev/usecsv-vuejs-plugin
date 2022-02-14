@@ -2,10 +2,10 @@
   "name": "@usecsv/vuejs",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/usecsv.ssr.js",
-  "browser": "dist/usecsv.esm.js",
-  "module": "dist/usecsv.esm.js",
-  "unpkg": "dist/usecsv.min.js",
+  "main": "dist/UseCSVButton.ssr.js",
+  "browser": "dist/UseCSVButton.esm.js",
+  "module": "dist/UseCSVButton.esm.js",
+  "unpkg": "dist/UseCSVButton.min.js",
   "types": "dist/types/src/entry.esm.d.ts",
   "files": [
     "dist/*",
@@ -21,7 +21,7 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
     "postbuild": "rimraf ./dist/types/dev ./dist/types/src/entry.d.ts",
-    "prepublishOnly": "build"
+    "prepublishOnly": "yarn build"
   },
   "dependencies": {
     "@semantic-release/changelog": "^6.0.1",
