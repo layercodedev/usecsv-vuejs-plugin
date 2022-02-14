@@ -12,7 +12,7 @@ interface IUsecsv {
 }
 
 export default /*#__PURE__*/ Vue.extend<{hasSlot:boolean},{onclick:()=>void,hasScopedSlot:()=>boolean},any,IUsecsv>({
-  name: "Usecsv", // vue component name
+  name: "use-csv", // vue component name
   data() {
     return {
       hasSlot: !!this.$slots.default,
