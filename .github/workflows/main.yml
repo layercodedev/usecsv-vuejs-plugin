@@ -2,7 +2,7 @@ name: CI
 on: push
 jobs:
   test:
-    name: Lint, typecheck & test
+    name: Lint, (typecheck & test..)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -31,14 +31,5 @@ jobs:
       - name: Install
         run: yarn install --frozen-lockfile --silent
 
-      - name: Copy example env
-        run: cp .env.example .env
-
       - name: Lint
         run: yarn lint
-
-      - name: Typecheck
-        run: yarn typecheck
-
-      - name: Tests (Jest)
-        run: yarn test
