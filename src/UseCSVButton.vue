@@ -11,7 +11,7 @@ interface IUsecsv {
   metadata: Record<string, string | number> | undefined;
 }
 
-export default /*#__PURE__*/ Vue.extend<{hasSlot:boolean},{onclick:()=>void,hasScopedSlot:()=>boolean},any,IUsecsv>({
+export default /*#__PURE__*/ Vue.extend<{hasSlot:boolean},{openModal:()=>void,hasScopedSlot:()=>boolean},any,IUsecsv>({
   name: "usecsv-button", // vue component name
   data() {
     return {
@@ -19,7 +19,7 @@ export default /*#__PURE__*/ Vue.extend<{hasSlot:boolean},{onclick:()=>void,hasS
     };
   },
   methods: {
-    onclick(): void {
+    openModal(): void {
       useCsvPlugin({
         importerKey: this.importerKey,
         user: this.importerKey,
@@ -40,10 +40,10 @@ export default /*#__PURE__*/ Vue.extend<{hasSlot:boolean},{onclick:()=>void,hasS
 <template>
   <div class="usecsv">
     <div v-if="hasScopedSlot()">
-      <slot :onclick="onclick"/>
+      <slot :openModal="openModal"/>
     </div>
     <div v-else>
-      <button type="button" id="usecsv-button" @click="onclick">
+      <button type="button" id="usecsv-button" @click="openModal">
         <slot> open usecsv </slot>
       </button>
     </div>
