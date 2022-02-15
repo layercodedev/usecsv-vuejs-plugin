@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/layercodedev/usecsv-vuejs-plugin/compare/v1.0.2...v1.0.3) (2022-02-15)
+
+
+### Bug Fixes
+
+* update props ([a8c47a1](https://github.com/layercodedev/usecsv-vuejs-plugin/commit/a8c47a1d2743ac2ea41c3f590a60080cd92634af))
+
 ## [1.0.2](https://github.com/layercodedev/usecsv-vuejs-plugin/compare/v1.0.1...v1.0.2) (2022-02-15)
 
 
