@@ -13,6 +13,11 @@ interface IUsecsv {
 
 export default /*#__PURE__*/ Vue.extend<{hasSlot:boolean},{openModal:()=>void,hasScopedSlot:()=>boolean},any,IUsecsv>({
   name: "usecsv-button", // vue component name
+  props:{
+    importerKey:{},
+    user:{},
+    metadata:{}
+  },
   data() {
     return {
       hasSlot: !!this.$slots.default,
@@ -22,12 +27,11 @@ export default /*#__PURE__*/ Vue.extend<{hasSlot:boolean},{openModal:()=>void,ha
     openModal(): void {
       useCsvPlugin({
         importerKey: this.importerKey,
-        user: this.importerKey,
+        user: this.user,
         metadata: this.metadata,
       });
     },
     hasScopedSlot(): boolean {
-      console.log(this.$scopedSlots.default && this.$scopedSlots.default.name);
       return (
         (this.$scopedSlots.default && this.$scopedSlots.default.name) ===
         "normalized"
