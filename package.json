@@ -13,7 +13,7 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "serve": "vue-cli-service help",
+    "serve": "vue-cli-service serve dev/serve.ts",
     "lint": "eslint src --ext .ts,.vue",
     "prebuild": "rimraf ./dist",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
@@ -29,7 +29,7 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.2",
     "@semantic-release/release-notes-generator": "^10.0.3",
-    "@usecsv/js": "^0.1.0",
+    "@usecsv/js": "0.2.0",
     "semantic-release": "^19.0.2"
   },
   "devDependencies": {

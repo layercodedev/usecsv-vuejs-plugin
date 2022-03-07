@@ -2,21 +2,17 @@
 import Vue from "vue";
 import useCsvPlugin from "@usecsv/js";
 
-type UserObject = {
-  readonly userId: string;
-};
-interface IUsecsv {
-  importerKey: string;
-  user?: UserObject;
-  metadata: Record<string, string | number> | undefined;
-}
+
+type IUsecsv = Parameters<typeof useCsvPlugin>[0];
+
 
 export default /*#__PURE__*/ Vue.extend<{hasSlot:boolean},{openModal:()=>void,hasScopedSlot:()=>boolean},any,IUsecsv>({
   name: "usecsv-button", // vue component name
   props:{
     importerKey:{},
     user:{},
-    metadata:{}
+    metadata:{},
+    onData:{}
   },
   data() {
     return {
@@ -29,6 +25,7 @@ export default /*#__PURE__*/ Vue.extend<{hasSlot:boolean},{openModal:()=>void,ha
         importerKey: this.importerKey,
         user: this.user,
         metadata: this.metadata,
+        onData: this.onData,
       });
     },
     hasScopedSlot(): boolean {
