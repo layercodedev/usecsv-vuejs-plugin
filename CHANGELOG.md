@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/layercodedev/usecsv-vuejs-plugin/compare/v1.0.3...v1.1.0) (2022-03-07)
+
+
+### Features
+
+* add onData callback ([4c5830d](https://github.com/layercodedev/usecsv-vuejs-plugin/commit/4c5830debdb8e1d98ec23f7b8c0ec7a8ad4a6bfe))
+
 ## [1.0.3](https://github.com/layercodedev/usecsv-vuejs-plugin/compare/v1.0.2...v1.0.3) (2022-02-15)
 
 
