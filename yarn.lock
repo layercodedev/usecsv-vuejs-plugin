@@ -1814,12 +1814,11 @@
     "@typescript-eslint/types" "5.12.0"
     eslint-visitor-keys "^3.0.0"
 
-"@usecsv/js@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@usecsv/js/-/js-0.2.0.tgz#5a9d46bb5c4579aea72263751c38488fd9822244"
-  integrity sha512-xWSfkv9RTXiBKmVsrWQPBNCUlFZudgJ3OtEAyC59tZV3mzSWyDYaS4fC3WuY1+QSu3ovRfeFXVHELCaYb9AXEw==
+"@usecsv/js@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@usecsv/js/-/js-0.2.2.tgz#c95ce4d71e0d2c540dbf27848bc1a732bb663fe8"
+  integrity sha512-q5mc7Z1oootB/3QzJE6/jrI8DtiBPC1mzTtIECv4rZIzDDSFcB69p6No1B0ZWk8iV46nYlb3PiySiXEIGE9MNA==
   dependencies:
-    "@semantic-release/github" "^8.0.2"
     insert-css "^2.0.0"
     penpal "^6.0.1"
     when-dom-ready "^1.2.12"
