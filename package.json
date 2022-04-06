@@ -24,7 +24,7 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@usecsv/js": "0.2.2"
+    "@usecsv/js": "0.2.x"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
