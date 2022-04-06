@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/layercodedev/usecsv-vuejs-plugin/compare/v1.1.2...v1.1.3) (2022-04-06)
+
+
+### Bug Fixes
+
+* allow usecsv core patch updates ([ed1982e](https://github.com/layercodedev/usecsv-vuejs-plugin/commit/ed1982ed12528c1a6c4355eb5dcefb680e0f022e))
+
 ## [1.1.2](https://github.com/layercodedev/usecsv-vuejs-plugin/compare/v1.1.1...v1.1.2) (2022-03-09)
 
 
