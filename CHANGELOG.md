@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/layercodedev/usecsv-vuejs-plugin/compare/v1.1.5...v1.1.6) (2022-05-12)
+
+
+### Bug Fixes
+
+* update \"@usecsv/js\" , to fix close fn ([924a48a](https://github.com/layercodedev/usecsv-vuejs-plugin/commit/924a48ab69a95247340cd5b8a3a944e67b03fe27))
+
 ## [1.1.5](https://github.com/layercodedev/usecsv-vuejs-plugin/compare/v1.1.4...v1.1.5) (2022-04-25)
 
 
